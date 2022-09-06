@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import s from "./Header.module.css";
 
 const Header = ({ onClick, changeOptions }) => {
@@ -16,25 +16,27 @@ const Header = ({ onClick, changeOptions }) => {
 	}
 
 	return (
-		<header>
+		<header className={s.headerContainer}>
 			<h1> Country search </h1>
-			<form>
-				<input id="text" type="text" />
-				<button
-					type="submit"
-					onClick={(e) => {
-						e.preventDefault();
-						onClick(document.getElementById("text").value);
-					}}
-				>
-					{" "}
-					Search{" "}
-				</button>
-			</form>
-			<div>
+			<div className={s.formContainer}>
+				<form className={s.from}>
+					<input id="text" type="text" />
+					<button
+						type="submit"
+						onClick={(e) => {
+							e.preventDefault();
+							onClick(document.getElementById("text").value);
+						}}
+					>
+						{" "}
+						<i className="fa-solid fa-magnifying-glass"></i>{" "}
+					</button>
+				</form>
+			</div>
+			<div className={s.buttonsContainer}>
 				<h3>Group by:</h3>
 				<button
-					className="active"
+					className={`active ${s.button}`}
 					id="Continent"
 					value="Continent"
 					onClick={(e) => {
@@ -46,6 +48,7 @@ const Header = ({ onClick, changeOptions }) => {
 					Continent
 				</button>
 				<button
+					className={s.button}
 					id="Language"
 					value="Language"
 					onClick={(e) => {

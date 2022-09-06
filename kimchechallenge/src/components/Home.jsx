@@ -39,7 +39,7 @@ const Home = () => {
 	}
 
 	return (
-		<div className="container">
+		<div className={s.container}>
 			<Header onClick={searchCountries} changeOptions={changeOptions} />
 			<SelectedCountries
 				countries={countries}

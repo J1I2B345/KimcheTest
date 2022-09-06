@@ -1,3 +1,25 @@
-.active {
-	background-color: black;
+.headerContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.buttonsContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 60%;
+}
+.button {
+	height: 3rem;
+	border-radius: 1rem;
+	border: 0.1rem solid grey;
+}
+.formContainer {
+	width: 60%;
+}
+
+.form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
