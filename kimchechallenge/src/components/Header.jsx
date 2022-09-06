@@ -20,8 +20,9 @@ const Header = ({ onClick, changeOptions }) => {
 			<h1> Country search </h1>
 			<div className={s.formContainer}>
 				<form className={s.from}>
-					<input id="text" type="text" />
+					<input id="text" type="text" className={s.input} />
 					<button
+						className={`${s.buttonForm} ${s.button}`}
 						type="submit"
 						onClick={(e) => {
 							e.preventDefault();

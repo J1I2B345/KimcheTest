@@ -5,7 +5,7 @@ const Country = ({ options, country }) => {
 	if (options === "Language") {
 		return (
 			<div className={s.container}>
-				<h2>
+				<h2 className={s.externalH2}>
 					{country.languages.length
 						? country.languages.map((e) => <span key={e.name}> {e.name}</span>)
 						: ""}
@@ -31,20 +31,20 @@ const Country = ({ options, country }) => {
 	} else
 		return (
 			<div className={s.container}>
-				<h1>{country.continent.name}</h1>
+				<h2 className={s.externalH2}>{country.continent.name}</h2>
 				<div className={s.containerInt}>
 					<h3>
 						<span>{country.emoji}</span>
 						<span>{country.name}</span>
 					</h3>
-					<h3>
+					<h2>
 						<p style={{ textAlign: "center" }}>Language(s)</p>
 						{country.languages.length
 							? country.languages.map((e) => (
 									<span key={e.name}> {e.name}</span>
 							  ))
 							: ""}
-					</h3>
+					</h2>
 					<h4>
 						{" "}
 						<span>Capital:</span>

@@ -5,10 +5,21 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 10 rem;
 	flex-wrap: wrap;
+	width: 100%;
+	flex: 1 1 25rem;
 }
 
 .container {
-	width: 25rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1 1 25rem;
+	max-width: 40%;
+	margin: 1rem;
+}
+
+.externalH2 {
+	width: 100%;
+	margin-bottom: 0;
 }
