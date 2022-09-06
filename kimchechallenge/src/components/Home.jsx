@@ -27,7 +27,7 @@ const Home = () => {
 						setErrorSearching("");
 					} else {
 						setCountries([]);
-						setErrorSearching("There is no country with those letters");
+						setErrorSearching("There is no country with that word");
 					}
 				}
 			}
@@ -52,10 +52,7 @@ const Home = () => {
 			<div className={s.container}>
 				{" "}
 				<Header onClick={searchCountries} changeOptions={changeOptions} />
-				<h1 style={{ textAlign: "center" }}>
-					{" "}
-					Error 404. Algo salió mal. Por favor recarga la página{" "}
-				</h1>
+				<h1 style={{ textAlign: "center" }}> Error 404 </h1>
 			</div>
 		);
 	}

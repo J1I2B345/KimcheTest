@@ -14,7 +14,7 @@ export const SelectedCountries = ({ countries, options, error }) => {
 			</div>
 		);
 	}
-	return <div> {error}</div>;
+	return <h1 style={{ textAlign: "center" }}> {error} </h1>;
 };
 
 export default SelectedCountries;
