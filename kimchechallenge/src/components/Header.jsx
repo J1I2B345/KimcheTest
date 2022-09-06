@@ -17,6 +17,7 @@ const Header = ({ onClick, changeOptions }) => {
 
 	return (
 		<header className={s.headerContainer}>
+			<p>&#128512; &#128516; &#128525; &#128151;</p>
 			<h1> Country search </h1>
 			<div className={s.formContainer}>
 				<form className={s.from}>
