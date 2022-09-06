@@ -39,12 +39,12 @@ const Country = ({ options, country }) => {
 			<div className={s.container}>
 				<h2 className={s.externalH2}>{country.continent.name}</h2>
 				<div className={s.containerInt}>
-					<h3>
+					<h3 className={s.mg0}>
 						{" "}
 						<span className={s.emoji}>{country.emoji}</span>
 						<span className={s.name}>{country.name}</span>
 					</h3>
-					<h5 className={s.languages}>
+					<h5 className={`${s.languages} ${s.mg0}`}>
 						<p>Language</p>
 						{country.languages.length
 							? country.languages.map((e) => (
@@ -55,12 +55,12 @@ const Country = ({ options, country }) => {
 							  ))
 							: ""}
 					</h5>
-					<h5>
+					<h5 className={s.mg0}>
 						{" "}
 						<p>Capital:</p>
 						<span className={s.span}>{country.capital}</span>
 					</h5>
-					<h5>
+					<h5 className={s.mg0}>
 						{" "}
 						<p>Currency</p>{" "}
 						{country.currency.map((e, i) => (
