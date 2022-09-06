@@ -21,7 +21,10 @@ const Country = ({ options, country }) => {
 						<span className={s.name}>{country.name}</span>
 					</h3>
 
-					<h4 className={s.mg0}>{country.continent.name}</h4>
+					<h5 className={s.mg0}>
+						{" "}
+						<p> {country.continent.name}</p>
+					</h5>
 
 					<h5 className={s.mg0}>
 						{" "}
