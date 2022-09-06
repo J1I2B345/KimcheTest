@@ -27,6 +27,7 @@ const Header = ({ onClick, changeOptions }) => {
 						onClick={(e) => {
 							e.preventDefault();
 							onClick(document.getElementById("text").value);
+							document.getElementById("text").value = "";
 						}}
 					>
 						{" "}
