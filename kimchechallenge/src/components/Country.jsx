@@ -5,11 +5,11 @@ const Country = ({ options, country }) => {
 	if (options === "Language") {
 		return (
 			<div className={s.container}>
-				<h1>
+				<h2>
 					{country.languages.length
 						? country.languages.map((e) => <span key={e.name}> {e.name}</span>)
 						: ""}
-				</h1>
+				</h2>
 				<div className={s.containerInt}>
 					<h3>
 						<span>{country.emoji}</span>
