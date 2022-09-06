@@ -5,11 +5,11 @@ const Header = ({ onClick, changeOptions }) => {
 	let continent = document.getElementById("Continent");
 	let language = document.getElementById("Language");
 	function activeStyled(e) {
-		if (e.target.value === "Language") {
+		if (e.target.value === "Language" && continent && language) {
 			continent.classList.remove("active");
 			language.classList.add("active");
 		}
-		if (e.target.value === "Continent") {
+		if (e.target.value === "Continent" && continent && language) {
 			language.classList.remove("active");
 			continent.classList.add("active");
 		}

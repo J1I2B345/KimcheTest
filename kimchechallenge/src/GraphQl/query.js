@@ -4,7 +4,6 @@ import { gql } from "apollo-boost";
 export const LIST_COUNTRIES = gql`
 	{
 		countries {
-			id
 			name
 			code
 			languages {
