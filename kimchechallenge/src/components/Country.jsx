@@ -2,6 +2,9 @@ import React from "react";
 import s from "./Country.module.css";
 
 const Country = ({ options, country }) => {
+	if (!Array.isArray(country.currency)) {
+		country.currency = country.currency.split(",");
+	}
 	if (options === "Language") {
 		return (
 			<div className={s.container}>
@@ -23,7 +26,10 @@ const Country = ({ options, country }) => {
 					</h4>
 					<h3>
 						{" "}
-						<span>Currency</span> <span>{country.currency}</span>
+						<span>Currency</span>{" "}
+						{country.currency.map((e, i) => (
+							<span key={i}>{e}</span>
+						))}
 					</h3>
 				</div>
 			</div>
@@ -34,8 +40,8 @@ const Country = ({ options, country }) => {
 				<h2 className={s.externalH2}>{country.continent.name}</h2>
 				<div className={s.containerInt}>
 					<h3>
-						<span>{country.emoji}</span>
-						<span>{country.name}</span>
+						<span className={s.emoji}>{country.emoji}</span>
+						<span className={s.name}>{country.name}</span>
 					</h3>
 					<h2>
 						<p style={{ textAlign: "center" }}>Language(s)</p>
@@ -52,7 +58,10 @@ const Country = ({ options, country }) => {
 					</h4>
 					<h3>
 						{" "}
-						<span>Currency</span> <span>{country.currency}</span>
+						<span>Currency</span>{" "}
+						{country.currency.map((e, i) => (
+							<span key={i}>{e}</span>
+						))}
 					</h3>
 				</div>
 			</div>

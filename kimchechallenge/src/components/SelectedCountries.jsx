@@ -3,7 +3,7 @@ import Country from "./Country";
 import s from "./SelectedCountries.module.css";
 
 export const SelectedCountries = ({ countries, options, error }) => {
-	if (countries.length != 0) {
+	if (countries.length !== 0) {
 		return (
 			<div className={s.alignContainer}>
 				<div className={s.container}>

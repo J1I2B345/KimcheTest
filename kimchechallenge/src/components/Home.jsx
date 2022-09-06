@@ -38,6 +38,28 @@ const Home = () => {
 		setOptions(option);
 	}
 
+	if (loading) {
+		return (
+			<div className={s.container}>
+				{" "}
+				<Header onClick={searchCountries} changeOptions={changeOptions} />
+				<h1 style={{ textAlign: "center" }}> loading... </h1>
+			</div>
+		);
+	}
+	if (error) {
+		return (
+			<div className={s.container}>
+				{" "}
+				<Header onClick={searchCountries} changeOptions={changeOptions} />
+				<h1 style={{ textAlign: "center" }}>
+					{" "}
+					Error 404. Algo salió mal. Por favor recarga la página{" "}
+				</h1>
+			</div>
+		);
+	}
+
 	return (
 		<div className={s.container}>
 			<Header onClick={searchCountries} changeOptions={changeOptions} />
