@@ -1,7 +1,7 @@
 # Desafío para Software Engineers
 
 Nombre postulante: [Juan Ignacio Bevilacqua]
-Link a la app en producción: [[https://vercel.com/j1i2b345/kimche-test](https://vercel.com/j1i2b345/kimche-test "https://vercel.com/j1i2b345/kimche-test")]
+Link a la app en producción: [[https://kimche-test.vercel.app/](https://kimche-test.vercel.app/ "https://kimche-test.vercel.app/")]
 
 ## Instrucciones
 
